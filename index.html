@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="util.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="alarm-clock">
+
+            <div id="screenContainer">
+
+                <!-- Box for hour -->
+                <div id="hourBox" class="boxes">
+                    <div class="boxContent">
+                        10
+                    </div>
+                </div>
+
+                <div class="separatorDots">
+
+                    <div class="dot1"></div>
+
+                    <div class="dot1"></div>
+
+                </div>
+
+                <!-- Box for minutes -->
+                <div id="minBox" class="boxes">
+                    <div class="boxContent">
+                        00
+                    </div>
+                </div>
+
+                <div class="separatorDots">
+
+                    <div class="dot1"></div>
+
+                    <div class="dot1"></div>
+
+                </div>
+
+                <!-- Box for seconds -->
+                <div id="secBox" class="boxes">
+                    <div class="boxContent">
+                        00
+                    </div>
+                </div>
+            </div>
+
+            <div id="setTimerContainer">
+                <input type="number" placeholder="8" value="0" min="00" max="99">
+                <input type="number" placeholder="8" value="0" min="00" max="99">
+                <input type="number" placeholder="8" value="0" min="00" max="99">
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+
+            <div id="buttonsContainer">
+                <div>
+                    <img id="play" src="/Alarm-Clock/images/icons8-play-100.png" alt="Play">
+                </div>
+
+
+                <div>
+                    <img id="pause" src="/Alarm-Clock/images/icons8-pause-100.png" alt="Pause">
+                </div>
+
+                <div>
+                    <img id="retart" src="/Alarm-Clock/images/icons8-restart-100.png" alt="Restart">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

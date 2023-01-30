@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Digital Numbers Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Digital Numbers Regular'), url('/Alarm-Clock/font-folder/digital-numbers-cufonfonts-webfont/DigitalNumbers-Regular.woff') format('woff');
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#container {
+    background-color: #222222;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Digital Numbers Regular';
+    font-weight: normal;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#alarm-clock {
+    width: 80%;
+    height: 90%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+}
+
+#screenContainer {
+
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+
+}
+
+.boxes {
+    display: flex;
+    color: #46db89;
+    width: 200px;
+    height: 200px;
+    background-color: #11110e;
+    border: 2px solid #1b1b18;
+    font-size: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxContent {
+    z-index: 5;
+    position: relative;
+}
+
+.boxContent::before {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '88';
+    color: #151515;
+}
+
+.separatorDots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 70px;
+}
+
+.dot1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #46db89;
+    border: 2px solid #2be6a1;
+    box-shadow: 0px 0px 5px 1px #066b48, inset 0px 0px 1px 1px #c1f1d6;
+}
+
+#setTimerContainer {
+    /* flex: 1; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#setTimerContainer input {
+    width: 50px;
+    background-color: #11110e;
+    font-family: 'Digital Numbers Regular';
+    color: #46db89;
+    border: none;
+    border-left: 2px solid #1b1b18;
+}
+
+#setTimerContainer input:focus{
+    outline: none;
+    box-shadow:  0px 0px 0px 1px white , 0px 0px 5px 0px #46db89;
+
+}
+
+#setTimerContainer input::placeholder {
+    color: gray;
+}
+
+#buttonsContainer {
+    flex: 1;
+    margin-top: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#buttonsContainer img {
+
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px 0px #066b48,
+        inset 0px 0px 10px 0px #066b48,
+        0px 0px 0px 0px white,
+        inset 0px 0px 0px 2px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#buttonsContainer img:active {
+
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px 0px #066b48,
+        inset 0px 0px 15px 0px #066b48,
+        0px 0px 0px 2px white,
+        inset 0px 0px 0px 2px;
+    filter: grayscale(100%);
+}
+
+/*  Switch From W3School */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 1px solid #066b48;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    bottom: 0px;
+    top: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #066b48;
+    border: 1px solid white;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #066b48;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* 
+   Source of images -
+
+   GreenColoredPlayButton: https://icons8.com/icon/9978/play 
+
+   GreenColoredPauseButton: https://icons8.com/icon/9987/pause
+
+   GreenColoredRestartButton: https://icons8.com/icons/set/restart
+*/
