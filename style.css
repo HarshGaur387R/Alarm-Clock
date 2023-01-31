@@ -95,7 +95,7 @@
     gap: 10px;
 }
 
-#setTimerContainer input {
+.usrInput {
     width: 50px;
     background-color: #11110e;
     font-family: 'Digital Numbers Regular';
@@ -104,13 +104,13 @@
     border-left: 2px solid #1b1b18;
 }
 
-#setTimerContainer input:focus{
+.usrInput:focus{
     outline: none;
     box-shadow:  0px 0px 0px 1px white , 0px 0px 5px 0px #46db89;
 
 }
 
-#setTimerContainer input::placeholder {
+.usrInput::placeholder {
     color: gray;
 }
 
