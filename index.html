@@ -57,11 +57,11 @@
             </div>
 
             <div id="setTimerContainer">
-                <input class="usrInput" type="number" placeholder="8" value="0" min="00" max="99" >
-                <input class="usrInput" type="number" placeholder="8" value="0" min="00" max="60">
-                <input class="usrInput" type="number" placeholder="8" value="0" min="00" max="60">
+                <input title="hours" class="usrInput" type="number" placeholder="8" value="0" min="00" max="99" >
+                <input title="minutes" class="usrInput" type="number" placeholder="8" value="0" min="00" max="60">
+                <input title="seconds" class="usrInput" type="number" placeholder="8" value="0" min="00" max="60">
 
-                <label class="switch">
+                <label title="Unlock and Lock" class="switch">
                     <input id="checkbox" type="checkbox">
                     <span class="slider round"></span>
                 </label>
@@ -69,17 +69,17 @@
 
 
             <div id="buttonsContainer">
-                <div>
-                    <img id="play" src="/Alarm-Clock/images/icons8-play-100.png" alt="Play">
+                <div title="play">
+                    <img id="play" class="unActive" src="/Alarm-Clock/images/icons8-play-100.png" alt="Play">
                 </div>
 
 
-                <div>
-                    <img id="pause" src="/Alarm-Clock/images/icons8-pause-100.png" alt="Pause">
+                <div title="pause">
+                    <img id="pause" class="unActive" src="/Alarm-Clock/images/icons8-pause-100.png" alt="Pause">
                 </div>
 
-                <div>
-                    <img id="retart" src="/Alarm-Clock/images/icons8-restart-100.png" alt="Restart">
+                <div title="restart">
+                    <img id="restart" class="unActive" src="/Alarm-Clock/images/icons8-restart-100.png" alt="Restart">
                 </div>
             </div>
 

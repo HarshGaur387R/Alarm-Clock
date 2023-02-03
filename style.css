@@ -123,8 +123,7 @@
     gap: 50px;
 }
 
-#buttonsContainer img {
-
+.unActive{
     border: 1px solid white;
     box-shadow: 0px 0px 10px 0px #066b48,
         inset 0px 0px 10px 0px #066b48,
@@ -132,19 +131,23 @@
         inset 0px 0px 0px 2px;
     transition: 0.2s ease;
     cursor: pointer;
+    user-select: none;
 }
 
-#buttonsContainer img:active {
-
+.Active{
     border: 1px solid white;
     box-shadow: 0px 0px 10px 0px #066b48,
         inset 0px 0px 15px 0px #066b48,
         0px 0px 0px 2px white,
         inset 0px 0px 0px 2px;
     filter: grayscale(100%);
+    transition: 0.2s ease;
+    cursor: pointer;
+    user-select: none;
 }
 
 /*  Switch From W3School */
+
 
 .switch {
     position: relative;
@@ -184,6 +187,7 @@
     -webkit-transition: .4s;
     transition: .4s;
 }
+
 
 input:checked+.slider {
     background-color: #066b48;
