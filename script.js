@@ -52,7 +52,7 @@ function getUserInput() {
     userInputsField[1].value = 0;
   }
   if (!userInputsField[2].value) {
-    userInputsField[3].value = 0;
+    userInputsField[2].value = 0;
   }
 
   return { hour: Number.parseInt(userInputsField[0].value), minutes: Number.parseInt(userInputsField[1].value), seconds: Number.parseInt(userInputsField[2].value) };
@@ -130,7 +130,7 @@ function playIsPressed() {
     }
     sec++;
 
-  }, 1);
+  }, 1000);
 }
 
 function pauseIsPressed() {
